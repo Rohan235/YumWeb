@@ -2,6 +2,7 @@
     "name": "forkify",
     "version": "2.0.0",
     "description": "search over 1m recipes, bookmark them, add new ones, plan your meals for the week and much more",
+    "type": "module",
     "default": "index.html",
     "scripts": {
         "watch:sass": "node-sass src/sass/main.scss src/css/main.css -w",
@@ -13,7 +14,6 @@
         "build:css": "npm-run-all compile:sass prefix:css compress:css",
         "build:dist-dir": "parcel build index.html",
         "build": "npm-run-all build:css build:dist-dir"
-       
     },
     "author": "Alexandra Simion",
     "license": "ISC",
@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "core-js": "^3.29.1",
+        "fraction.js": "^4.2.0",
         "fractional": "^1.0.0",
         "regenerator-runtime": "^0.13.11"
     }
