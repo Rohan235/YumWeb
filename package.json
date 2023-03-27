@@ -6,7 +6,7 @@
     "default": "index.html",
     "scripts": {
         "watch:sass": "node-sass src/sass/main.scss src/css/main.css -w",
-        "devserver": "parcel index.html",
+        "devserver": "parcel index.html --no-scope-hoist",
         "start": "npm-run-all --parallel devserver watch:sass",
         "compile:sass": "node-sass  src/sass/main.scss src/css/main.comp.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/main.comp.css -o src/css/main.prefix.css",
