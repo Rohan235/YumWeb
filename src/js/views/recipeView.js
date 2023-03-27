@@ -1,4 +1,5 @@
 // import icons from '../img/icons.svg'; //Parcel 1
+const Fraction = require('fractional').Fraction
 import icons from 'url:../../img/icons.svg'; //Parcel 2 version
 import { Fraction } from 'fractional';
 import View from './View.js';
